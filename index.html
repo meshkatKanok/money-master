@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mt-5 bg">
+        <h1 class="text-4xl font-bold text-blue-700 mb-5 text-center">Money Master</h1>
+        <div class="mx-auto w-4/12 bg-blue-300 h-full p-5 rounded-lg ">
+            <div class="h-full text-center">
+                <h1 class="text-4xl mb-5 font-semibold">Income</h1>
+                <h3 class="text-base text-black font-bold mb-5">income:
+                    <input id="total-salary" type="text" value="0">
+                </h3>
+                <h1 class="text-black text-3xl font-semibold mb-5">Expenses</h1>
+                <h3 class="text-base text-black font-bold mb-5">Food:
+                    <input id="food" type="text">
+                </h3>
+                <h3 class="text-base text-black font-bold mb-5">Rent:
+                    <input id="rent" type="text">
+                </h3>
+                <h3 class="text-base text-black font-bold mb-5">Clothes:
+                    <input id="cloth" type="text">
+                </h3>
+
+                <button id="calculate" class="bg-black px-5 py-3 rounded text-white mb-5 text-2xl">Calculate</button>
+
+                <h1 class="text-3xl text-black font-bold mb-5">Total Expenses:<span id="total-exp" class="text-blue-700 text-3xl">00</span></h1>
+                <h1 class="text-3xl text-black font-bold mb-5">Balance:<span id="blance" class="text-blue-700 text-3xl">00</span></h1>
+
+                <span class="text-base text-black font-bold mb-5">Save:
+                    <input id="saving-money" type="text">%<button id="save" class="bg-black  p-2 rounded text-white">Save</button>
+                </span>
+                <h1 class="text-2xl text-black font-bold mt-5">Saving Amount: <span id="show-ammount">00</span></h1>
+                <h1 class="text-2xl text-black font-bold">Remaining Balance: <span id="remain">00</span></h1>
+            </div>
+
+        </div>
+    </div>
+<script src="/index.js"></script>
+</body>
+</html>
